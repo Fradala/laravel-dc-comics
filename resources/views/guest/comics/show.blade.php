@@ -14,19 +14,20 @@
                                 {{ $comic['title'] }}
                             </h2>
 
-                            <div class="card text-center">
-                                <img src=" {{ $comic['thumb'] }} " alt="">
+                            <div class="card-image text-center">
+                                <img class="w-50" src=" {{ $comic['thumb'] }} " alt="">
+                                <div class="card-body">
+                                    <p>
+                                        {{ $comic['series'] }}
+                                    </p>
+                                    <p>
+                                        {{ $comic['description'] }}
+                                    </p>
+    
+                                </div>
 
                             </div>
-                            <div class="card-body">
-                                <p>
-                                    {{ $comic['series'] }}
-                                </p>
-                                <p>
-                                    {{ $comic['description'] }}
-                                </p>
-
-                            </div>
+                           
 
 
                         </div>
