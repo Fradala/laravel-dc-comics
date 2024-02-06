@@ -10,7 +10,7 @@
                    
                         <div class="col-7 m-3 p-3">
 
-                            <h2>
+                            <h2 class="text-center">
                                 {{ $comic['title'] }}
                             </h2>
 
