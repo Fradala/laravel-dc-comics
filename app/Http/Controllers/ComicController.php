@@ -89,7 +89,7 @@ class ComicController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'title'=> ['required','min:4', Rule::unique('comics')->ignore($comic->id)],
+            'title'=> ['required','min:4', Rule::unique('comics')->ignore($id)],
             'description'=> ['required','min:10', 'max:2000'],
             'thumb'=> ['required', 'min:4', 'url:http,https'],
             'price'=> ['required', 'min:3'],
