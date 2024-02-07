@@ -21,6 +21,9 @@
                                         {{ $comic['series'] }}
                                     </p>
                                     <p>
+                                        {{ $comic['price'] }}
+                                    </p>
+                                    <p>
                                         {{ $comic['description'] }}
                                     </p>
     
